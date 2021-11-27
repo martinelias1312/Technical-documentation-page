@@ -1,0 +1,104 @@
+/* General settings */
+:root {
+    --color-white: #fff;
+    --color-gray: #d3d3d3;
+    --color-darkGray: #999999;
+    --color-black: #222; 
+}
+html, body {
+    margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5em;
+}
+
+/* Navigation bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 13em;
+    height: 100%;
+    border-right: 0.3em solid var(--color-darkGray);
+    padding: 1.5em;
+    background: var(--color-gray);
+}
+
+#navbar header {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+}
+
+.navbar-list li {
+    border-bottom: 0.2em dotted var(--color-darkGray);    
+    margin: 0.8em 0;
+    width: 100%;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.navbar-list li a:hover, .navbar-list li a:focus {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Main */
+#main-doc {
+    position: absolute;
+    margin-left: 15em;
+    padding: 2em;
+}
+
+#main-doc header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0 1.5em 0;
+}
+
+#main-doc p {
+    margin: 0 0 2em 1em;
+}
+
+.codes-list {
+    background: var(--color-darkGray);
+    padding: 1.5em;
+    border-radius: 0.3em;
+    color: var(--color-white);
+    font-size: 1.2em;
+    list-style: inside;
+}
+
+.codes-list li {
+    background: var(--color-black);
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+
+/* Media Queries */
+@media screen  and ( max-width: 800px ) {
+    #main-doc header {
+        text-align: center;
+    }        
+}
